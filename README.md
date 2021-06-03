@@ -1,30 +1,27 @@
-# Portfolio
+## Data Science Portfolio Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
+Hello! Thanks for your interest in this custom Data Science Portfolio Template. If you'd like to utilize this to showcase your own projects, feel free to work through the instructions below.
 
-## Development server
+### Prerequisites:
+* You'll need to have npm (package manager) installed on your computer. This will also install node.js, which is utilized for building Angular applications. You can find installation instructions for this here: https://www.npmjs.com/get-npm
+* You'll also need to download the Angular Command Line Interface (CLI) after installing npm. Run ```npm i @angular/cli``` to install the interface.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Clone the repository
+* On your local computer, clone this repository by running ```git clone https://github.com/zachalexander/data-science-portfolio-template.git```.  
 
-## Code scaffolding
+### Run npm install
+* Then, to download all of the necessary node modules, run ```npm install``` inside of the 'data-science-portfolio-template' directory.  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Run the application locally
+* Run ```npm start``` to compile the code and run the application locally. After it starts up, you can go to 'http://localhost:4200' to develop locally.
 
-## Build
+### Adjust text and color scheme
+* Based on your preferences, you can adjust the content to match your work and change the color scheme. I've also added code blocks inside of the html files ```<!-- EDIT CONTENT BELOW -->``` to highlight places where text will need to be adjusted. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Additionally, I've created a video here as a guide for editing:
 
-## Running unit tests
+### Deploy your portfolio!  
+ * When your website is ready to be deployed, you can follow these instructions here: https://medium.com/@saleemmalikraja/deploying-an-angular-app-to-firebase-hosting-18f99c9d5722
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### You can now admire your fully deployed portfolio!! :)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# portfolio
-"# data-science-portfolio-template" 
-"# data-science-portfolio-template" 
