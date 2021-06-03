@@ -1,0 +1,302 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+/* COLOR SCHEME */
+
+
+/* Color Theme Swatches in Hex */
+$Interaction-1-hex: #333333;
+$Interaction-2-hex: #5F6A72;
+$Interaction-3-hex: #738A90;
+$Interaction-4-hex: #A6CBBE;
+$Interaction-5-hex: #F2F2F2;
+
+body, nav {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  z-index: 1;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+@mixin iphone5 {
+  @media only screen 
+  and (min-device-width : 320px) 
+  and (max-device-width : 568px) { 
+    @content;
+  }
+}
+
+@mixin iphone5L {
+  @media only screen 
+  and (min-device-width : 320px) 
+  and (max-device-width : 568px) 
+  and (orientation : landscape) { 
+    @content;
+  }
+}
+
+
+@mixin iphone678 {
+  @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 667px) { 
+    @content;
+  }
+}
+
+@mixin iphone678L {
+  @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 667px) 
+  and (orientation : landscape) { 
+    @content;
+  }
+}
+
+@mixin iphone678plus {
+  @media only screen 
+  and (min-device-width : 414px) 
+  and (max-device-width : 736px) { 
+    @content;
+  }
+}
+
+@mixin iphone678plusL {
+  @media only screen 
+  and (min-device-width : 414px) 
+  and (max-device-width : 736px) 
+  and (orientation : landscape) { 
+    @content;
+  }
+}
+
+// @mixin iphoneX {
+//   @media only screen 
+//   and (min-device-width : 375px) 
+//   and (max-device-width : 812px)
+//   and (-webkit-device-pixel-ratio : 3) { 
+//     @content;
+//   }
+// }
+
+@mixin iphoneXL {
+  @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 812px) 
+  and (-webkit-device-pixel-ratio : 3)
+  and (orientation : landscape) { 
+    @content;
+  }
+}
+
+@mixin iphoneX {
+  @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 812px) 
+  and (-webkit-device-pixel-ratio : 3)
+  and (orientation : portrait) { 
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) {
+    @content;
+  }
+}
+
+@mixin ipadL {
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) 
+  and (orientation : landscape) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  /* Desktops and laptops ----------- */
+  @media only screen 
+  and (min-width : 1224px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin responsive {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin ipad{
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px)  { 
+    @content;
+  }
+}
+
+
+@mixin smalldevice {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin meddevice {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lgdevice {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin lgdevice-alt {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin xldevice {
+/* ----------- Non-Retina Screens ----------- */
+  @media screen
+    and (min-device-width: 1200px)
+    and (max-device-width: 1600px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+      @content;
+  }
+
+  /* ----------- Retina Screens ----------- */
+  @media screen
+    and (min-device-width: 1200px)
+    and (max-device-width: 1600px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (min-resolution: 192dpi) {
+      @content;
+  }
+}
+
+@mixin xxldevice {
+  @media only screen  and (min-width : 1600px) {
+      @content;
+  }
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+nav {
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+  box-shadow: none !important;
+  position: fixed !important;
+  z-index: 9999 !important;
+
+  a {
+    color: #343a40 !important;
+    margin: 0;
+    text-decoration: none;
+    z-index: 1 !important;
+  }
+
+  a.waves-effect.waves-light.btn.square-btn {
+    border-radius: 10px !important;
+    z-index: 0.25 !important;
+  }
+
+  i {
+    color: #343a40!important;
+  }
+
+  a:hover {
+    text-decoration: none !important;
+  }
+}
+
+.square-btn {
+  height: 3em !important;
+  border-radius: 25px !important;
+  color: $Interaction-2-hex !important;
+  font-weight: 700;
+  font-size: 1em;
+  max-width: 150px;
+  background-color: #fff !important;
+  margin: 1em auto 1em 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0.25;
+}
+
+
+p.error_value {
+  margin: 0;
+}
+
+td {
+  text-align: center !important;
+}
+
+td.state_title {
+  text-align: center !important;
+}
+
+.medium-widget-article__clap {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 700 !important;
+  color: #ddd !important;
+}
+
+g.tick line {
+  opacity: 0;
+}
+
+g.y-axis path, g.x-axis path {
+  opacity: 0;
+}
+
+g.x-axis text, g.y-axis text {
+  font-weight: 600;
+  color: #333;
+  font-size: 1em;
+  font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
+}
+
+g.legend text {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: 600;
+  font-size: 0.75em;
+}

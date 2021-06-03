@@ -1,0 +1,6 @@
+{
+    "/api": {
+        "target": "http://coronavirus-tracker-api.herokuapp.com/all",
+        "secure": false
+    }
+}

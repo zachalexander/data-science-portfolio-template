@@ -1,0 +1,99 @@
+@import './../../../styles.scss';
+
+nav {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  z-index: 1;
+}
+
+
+.nav-wrapper {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    
+    .name {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: 'Playfair Display', 'Arial', sans-serif;
+      font-weight: 900;
+      color: #fff;
+      margin: 0.025em 0 0.25em 0 !important;
+    }
+
+    .button-wrapper {
+      display: flex;
+      flex-direction: row;
+
+      .btn-floating.btn-small.waves-effect.waves-light.navs {
+        border: 2px solid #fff;
+        background-color: transparent !important;
+        margin-right: 12px;
+        margin-bottom: 5px;
+        box-shadow: none !important;
+      
+        i {
+          line-height: 25px !important;
+          color: #fff !important;
+        }
+
+        z-index: 1;
+      }
+    }
+  }
+  
+  nav.navigation-mobile {
+    height: 50px;
+  
+    .nav-wrapper {
+      height: 50px;
+    }
+  }
+  
+.nav-wrapper.nav-wrapper-light {
+    background: #eee;  /* fallback for old browsers */
+    height: 50px;
+    width: 100vw;
+    z-index: 100;
+    border-bottom: 1px solid $Interaction-2-hex;
+
+    .name {
+      color: $Interaction-2-hex;
+    }
+
+    .button-wrapper {
+      .btn-floating.btn-small.waves-effect.waves-light.navs {
+        border: 2px solid $Interaction-2-hex !important;
+        color: $Interaction-2-hex;
+      
+        i {
+          line-height: 25px !important;
+          color: $Interaction-2-hex!important;
+        }
+      }
+    }
+
+}
+
+
+.navs {
+    i {
+      width: initial !important;
+      vertical-align: baseline !important;
+      line-height: 51px !important;
+    }
+  }
+  
+  .btn-floating.waves-effect.waves-light.top {
+    border: 3px solid $Interaction-2-hex;
+    background-color: transparent !important;
+    z-index: 1;
+  }

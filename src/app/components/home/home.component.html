@@ -1,0 +1,257 @@
+<!-- Navbar Component -->
+<app-navbar></app-navbar>
+
+<!-- Homepage html -->
+
+<!-- Top of Page With Opening Graphs Section -->
+
+<div class="top">
+  <div class="top-wrapper" id="top">
+      <app-simplebarchart *ngIf="fakecasesbar" [data]="fakecasesbar">
+      </app-simplebarchart>
+      <app-simplelinechart *ngIf="fakecases" [data]="fakecases">
+      </app-simplelinechart>
+      <div class="callout_jumbo">
+        <div class="typewriter">
+          <div class="line1">
+            Hello, welcome <br> to my portfolio.
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- About Me Section -->
+
+<div class="aboutme-nav" id="aboutme-nav">
+  <div class="aboutme-header">About Me</div>
+  <div class="aboutme-wrapper">
+    <div class="svg-wrapper-me">
+      <!-- EDIT CONTENT BELOW -->
+        <img class="photo-me" src="../../../assets/headshot.jpg" />
+        <h5 class="aboutme-context"><span class='highlight'><strong>Hey!</strong> I'm [Name], a <strong>[Job Title]</strong> passionate about [...].</span></h5>
+        <a href='/resume'  class="waves-effect waves-light btn square-btn navigate">My Resume</a>
+      </div>
+    <div class="callout-wrapper">
+      <div class="svg-wrapper-callout1" >
+        <div class="call-out">
+            <!-- EDIT CONTENT BELOW -->
+          <h5 class="aboutme-context"><span class='highlight'>Callout box</span></h5>  
+        </div>
+      </div>
+      <div class="svg-wrapper-callout2">
+        <div class="call-out">
+              <!-- EDIT CONTENT BELOW -->
+          <h5 class="aboutme-context"><span class='highlight'>Another callout box</span>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- This is the projects content that will show on a larger screen (not mobile) -->
+
+<div class="projects-div" id="navigate">
+  <div class="projects-header">Projects</div>
+  <div class="projects-wrapper"  *ngIf="!mobile">
+
+    <div class="project_one">
+    </div>
+
+    <div class="project_one_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+            <!-- EDIT CONTENT BELOW -->
+          <a href='/climate-change'><h5 class="project_title"><span class='highlight-title'>Project #1</span></h5></a>
+            <span class='highlight-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </span>
+        </p>
+        <a href='###' class="waves-effect waves-light btn square-btn navigate">Read more</a>
+      </div>
+    </div>
+
+
+    <div class="project_two_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+              <!-- EDIT CONTENT BELOW -->
+          <a href='###' target='_blank'><h5 class="project_title"><span class='highlight-title'>Project #2</span></h5></a>
+          <span class='highlight-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </span>
+        </p>
+        <a href='###' class="waves-effect waves-light btn square-btn navigate">Explore</a>
+      </div>
+    </div>
+    <div class="project_two">
+    </div>
+
+    <div class="project_three">
+    </div>
+
+    <div class="project_three_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+            <!-- EDIT CONTENT BELOW -->
+          <a href='###'><h5 class="project_title"><span class='highlight-title'>Project #3</span></h5></a>
+          <span class='highlight-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+        </p>
+        <a href='###' class="waves-effect waves-light btn square-btn navigate">Read More</a>
+      </div>
+    </div>
+
+   
+  <div class="project_four_context">
+    <div class='proj-wrapper'>
+      <p class="project_description">
+          <!-- EDIT CONTENT BELOW -->
+        <a href='###'><h5 class="project_title"><span class='highlight-title'>Project #4</span></h5></a>
+          <span class='highlight-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+      </p>
+      <a href='###' class="waves-effect waves-light btn square-btn navigate">Read More</a>
+    </div>
+  </div>
+  <div class="project_four">
+  </div>
+    
+
+    <div class="project_five">
+    </div>
+
+    <div class="project_five_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+            <!-- EDIT CONTENT BELOW -->
+          <a href='###'><h5 class="project_title"><span class='highlight-title'>Project #5</span></h5></a>
+            <span class='highlight-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+        </p>
+        <a href='###'  class="waves-effect waves-light btn square-btn navigate">Go to site</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- This is the projects content that will show on a mobile device -->
+  <div class="projects-wrapper"  *ngIf="mobile">
+
+    <div class="project_one">
+    </div>
+
+    <div class="project_one_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+              <!-- EDIT CONTENT BELOW -->
+          <a href='###'><h5 class="project_title"><span class='highlight-title'>Project #1</span></h5></a>
+            <span class='highlight-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+        </p>
+        <a href='###'  class="waves-effect waves-light btn square-btn navigate">Read more</a>
+      </div>
+    </div>
+    
+    <div class="project_two">
+    </div>
+    <div class="project_two_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+                  <!-- EDIT CONTENT BELOW -->
+          <a href='###' target='_blank'><h5 class="project_title"><span class='highlight-title'>Project #2</span></h5></a>
+          <span class='highlight-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </span>
+        </p>
+        <a href='###' target='_blank' class="waves-effect waves-light btn square-btn navigate">Explore</a>
+      </div>
+    </div>
+    <div class="project_three">
+    </div>
+    <div class="project_three_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+                  <!-- EDIT CONTENT BELOW -->
+          <a href='###'><h5 class="project_title"><span class='highlight-title'>Project #3</span></h5></a>
+          <span class='highlight-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+        </p>
+        <a href='###' class="waves-effect waves-light btn square-btn navigate">Read More</a>
+      </div>
+    </div>
+    <div class="project_four">
+    </div>
+    <div class="project_four_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+                  <!-- EDIT CONTENT BELOW -->
+          <a href='###'><h5 class="project_title"><span class='highlight-title'>Project #4</span></h5></a>
+            <span class='highlight-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+        </p>
+        <a href='###' class="waves-effect waves-light btn square-btn navigate">Read More</a>
+      </div>
+    </div>
+    <div class="project_five">
+    </div>
+    <div class="project_five_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+                  <!-- EDIT CONTENT BELOW -->
+          <a href='###'><h5 class="project_title"><span class='highlight-title'>Project #5</span></h5></a>
+            <span class='highlight-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+        </p>
+        <a href='###'  class="waves-effect waves-light btn square-btn navigate">Go to site</a>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Medium Post section (the Medium widget should already be loaded, just edit the handle below) -->
+<!-- EDIT CONTENT BELOW -->
+<!-- Change your medium handle below at the @ symbol -->
+  <div class="mid1" id="medium">
+    <div class="medium-logo">
+      <img src="../../../assets/mediumlogo.svg" />
+      <h2>Publications</h2>
+    </div>
+    <div class="medium-posts" >
+        <ngx-medium-widget resource="https://medium.com/@zdalexander"
+        postsLimit="4"
+        postsPerLine="1"
+        pictureSize="small"
+        [postfields]="['description', 'publishAt','claps']"
+        postRatio="landscape">
+      </ngx-medium-widget>
+
+
+    </div>
+  </div>
+
+
+<!-- Final section area (feel free to delete if you do not have any utility for it!) -->
+  <!-- EDIT CONTENT BELOW -->
+<div class="section4" id='section4'>
+  <div class="section4-header">Section 4</div>
+  <div class="info_div">
+    <div class="section4-content">
+      <p>You can put extra content here.
+      <ul>
+        <li><i class="material-icons">chevron_right</i>Item 1</li>
+        <li><i class="material-icons">chevron_right</i>Item 2</li>
+        <li><i class="material-icons">chevron_right</i>Item 3</li>
+        <li><i class="material-icons">chevron_right</i>Item 4</li>
+        <li><i class="material-icons">chevron_right</i>Item 5</li>
+        <li><i class="material-icons">chevron_right</i>Item 6</li>
+      </ul>
+    </div>
+
+      <div class="parent">
+        <div></div>
+        <div class="summary_final">
+            <br>
+            <br>
+            <a href='###' class="waves-effect waves-light btn square-btn rpubs">Button</a>
+          </div>
+        <div></div>
+      </div>
+  </div>
+</div>
+
+<!-- Footer component loaded -->
+
+<app-footer></app-footer>
