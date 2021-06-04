@@ -18,10 +18,10 @@ Hello! Thanks for your interest in this custom Data Science Portfolio Template. 
 ### Adjust text and color scheme
 * Based on your preferences, you can adjust the content to match your work and change the color scheme. I've also added code blocks inside of the html files ```<!-- EDIT CONTENT BELOW -->``` to highlight places where text will need to be adjusted. 
 
-Additionally, I've created a video here as a guide for editing:
+Additionally, I've created a video here as a guide for editing: https://www.youtube.com/watch?v=xap7WdAGxeA
 
 ### Deploy your portfolio!  
- * When your website is ready to be deployed, you can follow these instructions here: https://medium.com/@saleemmalikraja/deploying-an-angular-app-to-firebase-hosting-18f99c9d5722
+ * When your website is ready to be deployed, you can follow the instructions in the tutorial video.
 
 ### You can now admire your fully deployed portfolio!! :)
 
